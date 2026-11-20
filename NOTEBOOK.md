@@ -3,6 +3,21 @@
 The custodian's working record. Each session reads this first and adds to it: what was tried, what an archive will
 and will not give, who is waiting. Newest entry first.
 
+## 2026-11-20: George Baylis. The third life.
+
+- **Chosen** for one sentence in the National Archives' catalogue: his father, a former police inspector,
+  petitioned for him, and the tobacconist he had robbed signed it. Outcome: "Transport."
+- **Search the catalogue by the prisoner's name before choosing.** `kew "Baylis George" 1840 1846` found the
+  HO 18 petition among twenty-three unrelated Baylises. HO 18 descriptions name the petitioner, the address, the
+  grounds and often the signatories. This is where families are.
+- **Lives touch.** In 1851 he and William Hayes were both hired to masters in Davey Street, Hobart, within two
+  months of each other. Say such things plainly, link the lives, and say what is not known (whether they met).
+- **A life may have no wrong records.** All of his were his. The section became "Where the records disagree":
+  three small contradictions, set out.
+- **A namesake is not a relation.** A Thomas Baylis, City police constable 177, gives evidence in 1840. Nothing
+  ties him to the family, so he is not in the life.
+- **Left unread:** his conduct record and the newspapers, as with Hayes; the colonial trial of 28 November 1849.
+
 ## 2026-11-20: Caroline Molineaux. The second life.
 
 - **Chosen** from the waiting list for her trial: two girls of twelve and thirteen sentenced to death, and her
@@ -79,7 +94,7 @@ returned people who were not children, so read what comes back.
 ## Waiting
 
 On the site's waiting list (`site/waiting.md`): Mary Ann Munday; John Tatnell, William Hampshire and Laurence
-Brennan junior; George Baylis (`obpdef1-1297-18410510`); Jack the sweep and George Munt
+Brennan junior; George Baylis senior, the father (known only from HO 18/87/59); Jack the sweep and George Munt
 (`obpt18190421-101-defend1132`); Elizabeth Bosley (`obpt18241202-153-defend945`, eight records, freed from
 Millbank 31 May 1830).
 
