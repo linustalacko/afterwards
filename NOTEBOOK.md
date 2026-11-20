@@ -3,6 +3,26 @@
 The custodian's working record. Each session reads this first and adds to it: what was tried, what an archive will
 and will not give, who is waiting. Newest entry first.
 
+## 2026-11-20: Caroline Molineaux. The second life.
+
+- **Chosen** from the waiting list for her trial: two girls of twelve and thirteen sentenced to death, and her
+  defence, which accuses the man they robbed. Her linked records looked rich (twenty) and were nearly all bare
+  index rows whose originals sit behind subscriptions.
+- **What opened her up: the National Archives' catalogue.** Its HO 17 petitions are described item by item, with
+  the grounds for clemency summarised. One search on both girls' surnames found the 1830 recommendation that got
+  them out. Search it for every life with an English conviction.
+- **A catalogue summary is not the document.** The words about "troublesome children" are the cataloguer's. The
+  life says so in the sentence and in the note. Do the same whenever a description stands in for a paper.
+- **Index dates lie.** The linking database had her in gaol at birth, four, five and eleven. Three of those are a
+  register's first year (1816 for the Millbank register), not her year. Read "year" in a Find My Past index row
+  as the volume's, until shown otherwise.
+- **Count by program.** I wrote that her defence was ninety-four words. It is 146. Any number in a life is
+  computed from the record's text, never estimated.
+- **A frontispiece must not echo the harm.** The first painting considered was a girl asleep with a figure
+  entering her room. Wrong for a child who said what she said. Hers is Leonardo's unknown girl, in an arch.
+- **Wikimedia Commons answered 429** after a handful of requests two seconds apart. Three seconds apart, and
+  fetching the original file instead of an odd-sized thumbnail, went through.
+
 ## 2026-11-20: William Hayes. The first life.
 
 - **Chosen** from ten children in the Digital Panopticon who were twelve or under at trial and have eighteen or
@@ -36,7 +56,8 @@ and will not give, who is waiting. Newest entry first.
 |---|---|---|
 | Old Bailey Proceedings, 1674–1913 | Yes | `https://www.dhi.ac.uk/api/data/oldbailey_record?text=…&year_gte=…&year_lte=…` and `oldbailey_record_single?idkey=t18421024-3070`. Only `text`, `year_gte`, `year_lte` and `from` are known to filter. Front matter is `f` + the session date. The public page is `https://www.oldbaileyonline.org/record/<id>` (refuses programs, fine for links). |
 | Digital Panopticon, 1780–1925 | Yes | `life?id=…`, `source?ids=…` (one record, every field), and `search?…`. No page for a single record: link to the life archive and name the record id. |
-| Wikimedia Commons | Yes | The API, for public-domain paintings. Needs a descriptive User-Agent. |
+| The National Archives' catalogue (Discovery) | Yes | `python3 tools/archives.py kew "Molineaux Bosley" 1822 1836` searches; `kew-item C14654837` prints one description. Item-level descriptions of HO 17 and HO 18 petitions, wills (PROB 11), ships' surgeons' journals (ADM 101). The public page is `https://discovery.nationalarchives.gov.uk/details/r/<id>`. |
+| Wikimedia Commons | Yes | The API, for public-domain paintings. Needs a descriptive User-Agent; three seconds between requests; fetch the original file's `url`. |
 | FreeBMD, Internet Archive | Answer, not yet used | |
 | Tasmanian Names Index (`stors.tas.gov.au`) | No, 403 | A person can open `https://stors.tas.gov.au/NI/<Taho url id>`; the id is on each Founders and Survivors record. |
 | Trove (Australian newspapers) | No, bot check | Has an official API that needs a key. Ask Linus before applying for one. |
@@ -59,7 +80,8 @@ returned people who were not children, so read what comes back.
 
 On the site's waiting list (`site/waiting.md`): Mary Ann Munday; John Tatnell, William Hampshire and Laurence
 Brennan junior; George Baylis (`obpdef1-1297-18410510`); Jack the sweep and George Munt
-(`obpt18190421-101-defend1132`); Caroline Molineaux (`obpt18241202-153-defend946`).
+(`obpt18190421-101-defend1132`); Elizabeth Bosley (`obpt18241202-153-defend945`, eight records, freed from
+Millbank 31 May 1830).
 
 Seen and not yet looked at: Robert Prendergast, twelve in 1827, eighteen records mostly hulks
 (`obpt18271025-210-defend1076`); John Lee, eleven in 1844, twenty records (`obpdef1-156-18441125`).

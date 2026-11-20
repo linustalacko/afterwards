@@ -145,6 +145,11 @@ function write(path, html) {
   writeFileSync(join(out, path, 'index.html'), html)
 }
 
+// Where in its painting a life's frontispiece should be centred when it is cropped.
+const focus = (meta) => (meta.frontispiece_focus ? ` style="object-position: ${meta.frontispiece_focus}"` : '')
+
+const count = (n) => ['No', 'One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine', 'Ten', 'Eleven', 'Twelve'][n] ?? String(n)
+
 // --- read
 
 const lives = readdirSync(join(root, 'lives'))
@@ -185,8 +190,8 @@ for (const life of lives) {
 <main>
   ${
     m.frontispiece
-      ? `<figure class="frontispiece">
-    <img src="../../img/${m.frontispiece}-2000.jpg" srcset="../../img/${m.frontispiece}-1000.jpg 1000w, ../../img/${m.frontispiece}-2000.jpg 2000w" sizes="100vw" alt="">
+      ? `<figure class="frontispiece${m.frontispiece_shape === 'arch' ? ' frontispiece-arch' : ''}">
+    <span class="frontispiece-frame"><img src="../../img/${m.frontispiece}-2000.jpg" srcset="../../img/${m.frontispiece}-1000.jpg 1000w, ../../img/${m.frontispiece}-2000.jpg 2000w" sizes="${m.frontispiece_shape === 'arch' ? '(min-width: 30rem) 24rem, 80vw' : '100vw'}" alt=""${focus(m)}></span>
     <figcaption>${esc(m.frontispiece_caption || '')}</figcaption>
   </figure>`
       : ''
@@ -215,7 +220,7 @@ const alcoves = [
   ...lives.map(
     (l) => `<li class="alcove alcove-filled">
       <a href="lives/${l.slug}/">
-        <span class="niche">${l.meta.frontispiece ? `<img src="img/${l.meta.frontispiece}-1000.jpg" alt="" loading="lazy">` : ''}</span>
+        <span class="niche">${l.meta.frontispiece ? `<img src="img/${l.meta.frontispiece}-1000.jpg" alt="" loading="lazy"${focus(l.meta)}>` : ''}</span>
         <span class="alcove-name">${esc(l.meta.name)}</span>
         <span class="alcove-dates">${esc(l.meta.born)} to ${esc(l.meta.died)}</span>
         <span class="alcove-line">${esc(l.meta.standfirst)}</span>
@@ -248,7 +253,7 @@ const home = `
 
   <section class="wall" id="lives">
     <h2>The lives</h2>
-    <p class="wall-count">${lives.length === 1 ? 'One alcove is filled.' : `${lives.length} alcoves are filled.`} The empty ones are people met along the way, whose lives nobody has followed yet. <a href="method/#add-to-the-library">Any of them can be yours to write.</a></p>
+    <p class="wall-count">${lives.length === 1 ? 'One alcove is filled.' : `${count(lives.length)} alcoves are filled.`} The empty ones are people met along the way, whose lives nobody has followed yet. <a href="method/#add-to-the-library">Any of them can be yours to write.</a></p>
     <ul class="alcoves">
       ${alcoves.join('\n      ')}
     </ul>

@@ -5,8 +5,8 @@ Attribution 4.0 International: https://creativecommons.org/licenses/by/4.0/. Cop
 "Afterwards" and a link.
 
 **The paintings** in `site/img/` are in the public domain. **Pictures of records** (files named `record-…`) belong
-to the archives named in their captions and are shown under those archives' terms; the Old Bailey Online images
-allow non-commercial use only.
+to the archives named in their captions and are shown under those archives' terms; the Old Bailey Online and
+Harvard University Library images allow non-commercial use only.
 
 **The code** (`build.mjs`, `site/style.css`, `tools/`) is under the MIT licence:
 

@@ -8,6 +8,7 @@ Read it at **https://linustalacko.github.io/afterwards/**
 
 | Life | First written down | Last seen |
 |---|---|---|
+| [Caroline Molineaux](lives/caroline-molineaux.md), about 1812 to after 1830 | The Old Bailey, London, December 1824 | The General Penitentiary, Millbank, April 1830 |
 | [William Hayes](lives/william-hayes.md), about 1832 to after 1876 | The Old Bailey, London, 24 October 1842 | Launceston gaol, Tasmania, 8 March 1876 |
 
 The library is kept by Claude, an AI, with the people who check its work. Anyone can add to it: answer one of the
@@ -19,10 +20,10 @@ life. [CONTRIBUTING.md](CONTRIBUTING.md) says how.
 | Path | What |
 |---|---|
 | `lives/` | One file a person. The text of the library. |
-| `site/` | The look of the website, its two paintings, the method page and the waiting list. |
+| `site/` | The look of the website, its pictures, the method page and the waiting list. |
 | `build.mjs` | Turns `lives/` and `site/` into `docs/`. No dependencies. |
 | `docs/` | The built website, as GitHub Pages serves it. Never edited by hand. |
-| `tools/archives.py` | Reads the Old Bailey and the Digital Panopticon, slowly. |
+| `tools/archives.py` | Reads the Old Bailey, the Digital Panopticon and the National Archives' catalogue, slowly. |
 | `NOTEBOOK.md` | The custodian's working record: how a life gets written, what was learned, who is waiting. |
 
 ```bash

@@ -62,7 +62,9 @@ The text is Markdown, but only a little of it: paragraphs, `##` headings, `-` li
 `[links](https://…)` and `[^notes]`. Each note sits on one line. Run `node build.mjs` and open `docs/` to see it.
 
 A frontispiece is optional. It must be a painting in the public domain, added to `site/img/` as `<name>-2000.jpg`
-and `<name>-1000.jpg`, and it is never passed off as a likeness.
+and `<name>-1000.jpg`, and it is never passed off as a likeness. `frontispiece_shape: arch` sets an upright painting
+in an arch instead of a band, and `frontispiece_focus: 42% 34%` says where to centre the crop. Choose a painting
+that does not echo a harm done to the person.
 
 ## If you are an AI, or are using one
 

@@ -1,9 +1,11 @@
-"""Read the two archives the library starts from. Slow on purpose: one request, then a pause.
+"""Read the archives the library starts from. Slow on purpose: one request, then a pause.
 
   python3 tools/archives.py trial t18421024-3070          an Old Bailey trial, in full
   python3 tools/archives.py trials '"ten years old"' 1830 1850   search trial text between two years
   python3 tools/archives.py life obpdef1-3070-18421024    a Digital Panopticon life archive
   python3 tools/archives.py source btr59962 cin64911      single linked records, every field
+  python3 tools/archives.py kew "Molineaux Bosley" 1822 1836     search the National Archives' catalogue between two years
+  python3 tools/archives.py kew-item C14654837            one catalogue description, in full
   python3 tools/archives.py lives e0.type.t.t=root e0.archive_size.i.l=18 e1.type.t.t=tried e1.age.i.h=12
                                                           search life archives (field names: NOTEBOOK.md)
 """
@@ -54,6 +56,29 @@ def source(record_id):
     return re.sub(r"(\| )+", "| ", html.unescape(re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " | ", page))))
 
 
+KEW = "https://discovery.nationalarchives.gov.uk/API/"
+
+
+def get_json(url):
+    time.sleep(1.3)
+    request = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "application/json"})
+    return json.loads(urllib.request.urlopen(request, timeout=60).read())
+
+
+def kew(query, year_from="1700", year_to="1930"):
+    params = {"sps.searchQuery": query, "sps.dateFrom": f"{year_from}-01-01", "sps.dateTo": f"{year_to}-12-31", "sps.heldByCode": "TNA"}
+    found = get_json(KEW + "search/records?" + urllib.parse.urlencode(params))
+    lines = [f"{found.get('count')} records"]
+    for record in found.get("records", []):
+        lines.append(f"{record.get('reference')}  {record.get('coveringDates')}  {record.get('id')}\n  {text_of(record.get('description') or '')[:600]}")
+    return "\n".join(lines)
+
+
+def kew_item(record_id):
+    record = get_json(KEW + "records/v1/details/" + record_id)
+    return f"{record.get('citableReference')}  {record.get('coveringDates')}\n{text_of(record['scopeContent']['description'])}"
+
+
 def lives(params):
     page = get(PANOPTICON + "search?" + urllib.parse.urlencode(params))
     seen, lines = set(), []
@@ -71,5 +96,7 @@ if __name__ == "__main__":
     elif command == "trials": print(trials(*args))
     elif command == "life": print("\n\n".join(life(a) for a in args))
     elif command == "source": print("\n\n".join(source(a) for a in args))
+    elif command == "kew": print(kew(*args))
+    elif command == "kew-item": print("\n\n".join(kew_item(a) for a in args))
     elif command == "lives": print(lives(dict(a.split("=", 1) for a in args)))
     else: print(__doc__)
