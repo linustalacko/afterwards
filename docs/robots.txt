@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://linustalacko.github.io/afterwards/sitemap.xml

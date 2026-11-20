@@ -1,0 +1,213 @@
+/* Afterwards. A gilded panel on red bole for the door, vellum leaves for the lives,
+   and sources set in the margin as glosses, the way a Renaissance printer set them. */
+
+:root {
+  --bole: #2b1611; /* the red clay laid under gold leaf */
+  --bole-light: #4a261b;
+  --gold: #d2a94e;
+  --gold-pale: #ecd391;
+  --gold-dim: #a98a4c;
+  --vellum: #f2e8d1;
+  --vellum-shade: #e2d3b1;
+  --lapis: #1e3769;
+  --vermilion: #ad2f1c; /* rubrics */
+  --ink: #23180e;
+  --ink-soft: #5c4a36;
+  --display: 'IM Fell French Canon', 'EB Garamond', Georgia, serif;
+  --text: 'EB Garamond', Georgia, 'Times New Roman', serif;
+}
+
+* { box-sizing: border-box; }
+
+html { font-size: 112.5%; -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: radial-gradient(120% 70vh at 50% 0, var(--bole-light) 0, var(--bole) 70%) no-repeat, var(--bole);
+  color: var(--vellum);
+  font-family: var(--text);
+  font-size: 1.12rem;
+  line-height: 1.6;
+  font-variant-numeric: oldstyle-nums;
+  text-rendering: optimizeLegibility;
+}
+
+a { color: inherit; text-decoration-color: var(--gold); text-decoration-thickness: 1px; text-underline-offset: 0.18em; }
+a:hover { text-decoration-thickness: 2px; }
+a:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; border-radius: 2px; }
+
+h1, h2, h3 { font-family: var(--display); font-weight: 400; line-height: 1.05; margin: 0; }
+
+/* The door: the library's name and three ways in. */
+
+.door {
+  display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 0.4rem 2rem;
+  max-width: 1180px; margin: 0 auto; padding: 1.6rem 1.25rem 1.2rem;
+}
+.door-name { font-family: var(--display); font-style: italic; font-size: 1.7rem; color: var(--gold-pale); text-decoration: none; }
+.door nav { display: flex; flex-wrap: wrap; gap: 0.2rem 1.6rem; font-size: 1rem; }
+.door nav a { color: var(--gold-pale); text-decoration: none; }
+.door nav a:hover { text-decoration: underline; text-decoration-color: var(--gold); }
+
+/* Home: the painting in a gilded arch. */
+
+.hero { max-width: 1180px; margin: 0 auto; padding: 1rem 1.25rem 4.5rem; text-align: center; }
+
+.panel {
+  margin: 0 auto; max-width: min(1100px, 100vh); padding: clamp(6px, 1vw, 11px);
+  background: linear-gradient(135deg, #f3dc9c 0%, #b98a2e 28%, #efd68f 52%, #9a7224 78%, #e6c877 100%);
+  border-radius: 50% 50% 3px 3px / 30% 30% 3px 3px;
+  box-shadow: 0 2.2rem 5rem rgba(10, 4, 2, 0.6), 0 0 0 1px rgba(20, 8, 4, 0.6);
+}
+.panel img {
+  display: block; width: 100%; height: auto; aspect-ratio: 3840 / 2661;
+  border-radius: 50% 50% 1px 1px / 30% 30% 1px 1px;
+  box-shadow: inset 0 0 0 1px rgba(20, 8, 4, 0.5);
+}
+
+.hero-words { max-width: 46rem; margin: 3.2rem auto 0; }
+.hero h1 { font-size: clamp(2.7rem, 7.4vw, 5.6rem); color: var(--gold-pale); letter-spacing: -0.005em; text-wrap: balance; }
+.hero-lede { font-size: 1.38rem; line-height: 1.5; margin: 1.8rem auto 0; max-width: 34rem; text-wrap: pretty; }
+.hero-caption { font-size: 0.92rem; color: var(--gold-dim); margin: 2rem auto 0; max-width: 30rem; }
+
+/* The wall of alcoves: a niche for each life. Filled ones hold a painting; empty ones wait. */
+
+.wall { max-width: 1180px; margin: 0 auto; padding: 1rem 1.25rem 5rem; }
+.wall h2, .unknown h2 { font-size: clamp(2.2rem, 5vw, 3.4rem); color: var(--gold-pale); text-align: center; }
+.wall-count, .unknown-lede { max-width: 36rem; margin: 1rem auto 0; text-align: center; color: var(--gold-pale); font-size: 1.12rem; text-wrap: pretty; }
+
+.alcoves { list-style: none; margin: 3.4rem 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 17rem), 1fr)); gap: 3.6rem 2.6rem; }
+.alcove, .alcove > a { display: flex; flex-direction: column; align-items: center; text-align: center; text-decoration: none; }
+.niche {
+  display: block; width: 100%; max-width: 15.5rem; aspect-ratio: 5 / 7; overflow: hidden; position: relative;
+  border-radius: 50% 50% 2px 2px / 36% 36% 2px 2px;
+}
+.alcove-filled .niche { padding: 6px; background: linear-gradient(135deg, #f3dc9c 0%, #b98a2e 30%, #efd68f 55%, #9a7224 80%, #e6c877 100%); box-shadow: 0 1.4rem 3rem rgba(10, 4, 2, 0.6); }
+.alcove-filled .niche img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 46% 60%; border-radius: 50% 50% 1px 1px / 36% 36% 1px 1px; }
+.alcove-empty .niche {
+  background: radial-gradient(90% 70% at 50% 100%, #3a1d15 0, #1a0c08 75%);
+  box-shadow: inset 0 0.9rem 2rem rgba(0, 0, 0, 0.75), inset 0 0 0 1px rgba(169, 138, 76, 0.45);
+  display: flex; align-items: flex-end; justify-content: center;
+}
+.alcove-empty .niche span { font-style: italic; font-size: 0.95rem; color: var(--gold-dim); padding-bottom: 1.3rem; }
+.alcove-name { font-family: var(--display); font-size: 1.75rem; line-height: 1.12; color: var(--gold-pale); margin-top: 1.3rem; text-wrap: balance; }
+.alcove-name strong { font-weight: 400; }
+.alcove-dates { font-style: italic; color: var(--gold); margin-top: 0.3rem; }
+.alcove-line { margin-top: 0.6rem; max-width: 19rem; font-size: 1.05rem; line-height: 1.45; color: var(--vellum); text-wrap: pretty; }
+.alcove-empty .alcove-line { color: #cdbf9f; }
+.alcove-filled a:hover .alcove-name { text-decoration: underline; text-decoration-color: var(--gold); text-decoration-thickness: 1px; text-underline-offset: 0.15em; }
+.alcove-filled a:focus-visible { outline-offset: 10px; }
+
+/* The open questions of every life. */
+
+.unknown { max-width: 46rem; margin: 0 auto; padding: 3rem 1.25rem 3.5rem; }
+.unknown ul { list-style: none; margin: 2.4rem 0 0; padding: 0; border-top: 1px solid rgba(169, 138, 76, 0.5); }
+.unknown li { border-bottom: 1px solid rgba(169, 138, 76, 0.5); }
+.unknown li a { display: block; padding: 1rem 0.2rem; text-decoration: none; font-size: 1.15rem; line-height: 1.45; }
+.unknown li a:hover { color: var(--gold-pale); }
+.unknown-who { display: block; font-style: italic; color: var(--gold); font-size: 0.98rem; }
+
+/* A life: a painting above, then a leaf of vellum. */
+
+.frontispiece { margin: 0; position: relative; }
+.frontispiece img { display: block; width: 100%; height: clamp(15rem, 52vh, 34rem); object-fit: cover; object-position: 50% 62%; border-top: 1px solid var(--gold-dim); border-bottom: 3px double var(--gold); }
+.frontispiece figcaption { max-width: 1180px; margin: 0 auto; padding: 0.7rem 1.25rem 0; font-size: 0.9rem; font-style: italic; color: var(--gold-dim); text-align: right; }
+
+.leaf {
+  position: relative; max-width: 1120px; margin: 2.2rem auto 4rem; padding: clamp(2.2rem, 6vw, 5rem) clamp(1.25rem, 5vw, 4.5rem) clamp(2.5rem, 6vw, 5rem);
+  background: radial-gradient(140% 100% at 50% 0, #f6eedb 0, var(--vellum) 55%, #eadcbc 100%);
+  color: var(--ink);
+  box-shadow: 0 1.6rem 4rem rgba(10, 4, 2, 0.55);
+}
+.leaf::before { content: ''; position: absolute; inset: 0.65rem; border: 1px solid rgba(169, 138, 76, 0.55); pointer-events: none; }
+.page-life .leaf { margin-top: 2.6rem; }
+
+.leaf-head { max-width: 40rem; margin-bottom: 3rem; }
+.rubric { color: var(--vermilion); font-style: italic; font-size: 1.1rem; margin: 0 0 0.9rem; }
+.leaf h1 { font-size: clamp(3rem, 9vw, 6.2rem); letter-spacing: -0.01em; }
+.dates { font-style: italic; font-size: 1.25rem; color: var(--ink-soft); margin: 0.9rem 0 0; }
+.standfirst { font-size: 1.5rem; line-height: 1.4; margin: 1.6rem 0 0; text-wrap: pretty; }
+
+.part { margin: 0; }
+.part + .part { margin-top: 3.6rem; padding-top: 2.4rem; border-top: 1px solid var(--vellum-shade); }
+.part h2 { font-size: clamp(1.8rem, 4vw, 2.5rem); margin-bottom: 1.2rem; scroll-margin-top: 2rem; }
+
+.row { margin: 0 0 1.15rem; }
+.row > p, .row > ul, .row > blockquote { margin: 0; max-width: 36rem; font-size: 1.22rem; line-height: 1.58; text-wrap: pretty; hanging-punctuation: first; }
+.row > ul { list-style: none; padding: 0; }
+.row > ul li { position: relative; padding-left: 1.7rem; margin-bottom: 0.75rem; }
+.row > ul li::before { content: '❧'; position: absolute; left: 0; top: 0.05em; color: var(--vermilion); font-size: 0.95em; }
+.leaf a { text-decoration-color: var(--vermilion); }
+
+/* The first letter of a life, illuminated. */
+.page-life .part-life p.opening::first-letter {
+  float: left; font-family: var(--display); font-size: 4.3em; line-height: 0.86;
+  padding: 0.1em 0.16em 0.06em; margin: 0.07em 0.14em 0 0;
+  color: var(--gold-pale); background: var(--lapis); border: 2px solid var(--gold);
+  box-shadow: inset 0 0 0 2px var(--lapis), inset 0 0 0 3px rgba(236, 211, 145, 0.5);
+}
+
+/* Note marks and the glosses they point to. */
+.mark { line-height: 0; font-size: 0.68em; margin-left: 0.08em; }
+.mark a, .gloss-n { color: var(--vermilion); text-decoration: none; font-weight: 600; font-variant-numeric: lining-nums; }
+.glosses { margin: 0.7rem 0 0.4rem; padding-left: 0.9rem; border-left: 2px solid var(--gold); max-width: 36rem; }
+.gloss { margin: 0 0 0.5rem; font-size: 0.95rem; line-height: 1.42; color: var(--ink-soft); overflow-wrap: anywhere; }
+.gloss:target { color: var(--ink); background: rgba(210, 169, 78, 0.22); }
+
+.part-records-that-are-not-him .row > ul li::before, .part-not-yet-known .row > ul li::before { color: var(--lapis); }
+
+@media (min-width: 62rem) {
+  .row { display: grid; grid-template-columns: minmax(0, 36rem) minmax(0, 1fr); column-gap: 3.4rem; align-items: start; }
+  .glosses { margin: 0.25rem 0 0; padding: 0 0 0 1rem; max-width: 19rem; border-left: 1px solid var(--gold); }
+}
+
+/* Pictures inside a life: a painting of the place, or the record itself. */
+
+.plate { margin: 2.2rem 0 2.4rem; max-width: 36rem; }
+.plate img { display: block; width: 100%; height: auto; border: 1px solid rgba(35, 24, 14, 0.35); box-shadow: 0 0.6rem 1.6rem rgba(35, 24, 14, 0.25); }
+.plate figcaption { margin-top: 0.7rem; font-size: 0.95rem; line-height: 1.42; font-style: italic; color: var(--ink-soft); }
+.plate-record img { mix-blend-mode: multiply; border: 0; box-shadow: none; border-top: 1px solid var(--ink-soft); border-bottom: 1px solid var(--ink-soft); padding: 0.4rem 0; }
+
+/* A life in dates: a thread down the page. */
+
+.part-in-dates .row > ul { border-left: 1px solid var(--gold); padding-left: 0; }
+.part-in-dates .row > ul li { padding-left: 1.3rem; margin-bottom: 0.55rem; font-size: 1.1rem; }
+.part-in-dates .row > ul li::before { content: ''; left: -0.28rem; top: 0.62em; width: 0.5rem; height: 0.5rem; border-radius: 50%; background: var(--vermilion); }
+.part-in-dates .row > ul li strong { font-weight: 500; }
+.part-everyone-named-here .row > ul li { font-size: 1.1rem; margin-bottom: 0.45rem; }
+
+/* For the family, and the hand that wrote the page. */
+
+.kin { margin-top: 3.6rem; padding: 2rem clamp(1.2rem, 4vw, 2.4rem) 2.1rem; max-width: 40rem; background: var(--lapis); color: var(--vellum); border: 1px solid var(--gold); box-shadow: inset 0 0 0 4px var(--lapis), inset 0 0 0 5px rgba(236, 211, 145, 0.45); }
+.kin h2 { font-size: 1.9rem; color: var(--gold-pale); margin-bottom: 0.8rem; }
+.kin p { margin: 0 0 0.9rem; font-size: 1.12rem; line-height: 1.5; }
+.kin p:last-child { margin-bottom: 0; }
+.leaf .kin a { color: var(--gold-pale); text-decoration-color: var(--gold); font-size: 1.15rem; }
+.hand { margin: 2.2rem 0 0; max-width: 40rem; font-size: 1rem; line-height: 1.5; font-style: italic; color: var(--ink-soft); }
+
+/* Names. */
+
+.names { list-style: none; margin: 0; padding: 0; max-width: 44rem; border-top: 1px solid var(--vellum-shade); }
+.names li { border-bottom: 1px solid var(--vellum-shade); }
+.names a { display: grid; grid-template-columns: 1fr; gap: 0.1rem; padding: 0.8rem 0; text-decoration: none; }
+.names-name { font-size: 1.3rem; }
+.names-name strong { font-weight: 500; }
+.names-own .names-name { font-family: var(--display); font-size: 1.7rem; }
+.names-own .names-name strong { font-weight: 400; }
+.names-said { color: var(--ink-soft); font-size: 1.02rem; line-height: 1.45; }
+.names a:hover .names-name { text-decoration: underline; text-decoration-color: var(--vermilion); }
+@media (min-width: 48rem) { .names a { grid-template-columns: 15rem 1fr; gap: 1.5rem; align-items: baseline; } }
+
+/* The colophon. */
+
+.colophon { max-width: 36rem; margin: 0 auto; padding: 3rem 1.25rem 4.5rem; text-align: center; font-size: 0.98rem; line-height: 1.5; color: var(--gold-dim); text-wrap: pretty; }
+.colophon::before { content: '❦'; display: block; font-size: 1.5rem; color: var(--gold); margin-bottom: 1rem; }
+.colophon p { margin: 0 0 0.6rem; }
+.colophon a { color: var(--gold-pale); }
+
+@media (max-width: 34rem) {
+  html { font-size: 106%; }
+  .panel { border-radius: 50% 50% 3px 3px / 22% 22% 3px 3px; }
+  .panel img { border-radius: 50% 50% 1px 1px / 22% 22% 1px 1px; }
+  .frontispiece figcaption { text-align: left; }
+}
