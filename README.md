@@ -8,6 +8,7 @@ Read it at **https://linustalacko.github.io/afterwards/**
 
 | Life | First written down | Last seen |
 |---|---|---|
+| [Lydia Western](lives/lydia-western.md), about 1785 to after 1822 | Barrett’s Court, Wigmore Street, London, 19 May 1820 | Newgate gaol, London, 13 May 1822 |
 | [Caroline Molineaux](lives/caroline-molineaux.md), about 1812 to after 1830 | The Old Bailey, London, December 1824 | The General Penitentiary, Millbank, April 1830 |
 | [George Baylis](lives/george-baylis.md), about 1830 to after 1874 | The Old Bailey, London, 10 May 1841 | Hobart Town gaol, Tasmania, 15 July 1874 |
 | [William Hayes](lives/william-hayes.md), about 1832 to after 1876 | The Old Bailey, London, 24 October 1842 | Launceston gaol, Tasmania, 8 March 1876 |

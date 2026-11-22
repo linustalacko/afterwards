@@ -3,6 +3,29 @@
 The custodian's working record. Each session reads this first and adds to it: what was tried, what an archive will
 and will not give, who is waiting. Newest entry first.
 
+## 2026-11-22: Lydia Western. The fourth life.
+
+- **Chosen** to vary the library: a woman of thirty-five, with a trade. She was the sister of Faith's ward at St
+  Bartholomew's Hospital for nine years, and was transported for seven years for the hospital's linen. Found with a
+  life-archive search for twenty or more records and an age at trial of 25 to 45; she and Charlotte Walker (1777,
+  twenty-eight records, `obpt17771203-58-defend585`) were the only women among twenty.
+- **What opened her up: the catalogue again.** `kew "Lydia Weston"` (the trial's "Western" found nothing) gave
+  HO 17/97/8: the surgeon of Newgate, 1822, "Cancer of the uterus; not expected to recover", and the condition that
+  she serve the rest of her term in St Bartholomew's. **Search the catalogue under every spelling**; here the court's
+  was the odd one out.
+- **Mary Ann Munday is thin.** Two records: her trial and a death in 1897 matched by name and birth year alone. Not
+  followable from what is free. Left on the waiting list for someone with a subscription.
+- **FreeREG answers programs.** A GET of `/search_queries/new` for the form token and cookie, then a POST to
+  `/search_queries` with `search_query[last_name]`, `[first_name]`, `[start_year]`, `[end_year]`,
+  `[chapman_codes][]=LND` (and `MDX`), `[record_type]=bu` for burials. No bot check. London is thinly transcribed:
+  no Westons, and no Foot burials in the City 1811–1820 at all.
+- **The life-archive search ignores `e0.gender.t.t=female`.** It returned men. Read what comes back.
+- **The page images show the day.** The trial is printed just before "SECOND DAY, THURSDAY, JUNE 29", which dates it
+  to the first day of the session. Look at the page, not only the text.
+- **Left unread:** the sixteen Newgate calendar entries (Find My Past), the HO 13 entry book, and St Bartholomew's
+  own archive (Barts Health NHS Trust Archives: admissions, the governors' journals, the burial ground of St
+  Bartholomew-the-Less). The page was not looked at in a browser this time; the preview server was declined.
+
 ## 2026-11-20: George Baylis. The third life.
 
 - **Chosen** for one sentence in the National Archives' catalogue: his father, a former police inspector,
@@ -73,6 +96,7 @@ and will not give, who is waiting. Newest entry first.
 | Digital Panopticon, 1780–1925 | Yes | `life?id=…`, `source?ids=…` (one record, every field), and `search?…`. No page for a single record: link to the life archive and name the record id. |
 | The National Archives' catalogue (Discovery) | Yes | `python3 tools/archives.py kew "Molineaux Bosley" 1822 1836` searches; `kew-item C14654837` prints one description. Item-level descriptions of HO 17 and HO 18 petitions, wills (PROB 11), ships' surgeons' journals (ADM 101). The public page is `https://discovery.nationalarchives.gov.uk/details/r/<id>`. |
 | Wikimedia Commons | Yes | The API, for public-domain paintings. Needs a descriptive User-Agent; three seconds between requests; fetch the original file's `url`. |
+| FreeREG (parish registers) | Yes | Form token, then POST; see the 2026-11-22 entry. London is thinly covered. |
 | FreeBMD, Internet Archive | Answer, not yet used | |
 | Tasmanian Names Index (`stors.tas.gov.au`) | No, 403 | A person can open `https://stors.tas.gov.au/NI/<Taho url id>`; the id is on each Founders and Survivors record. |
 | Trove (Australian newspapers) | No, bot check | Has an official API that needs a key. Ask Linus before applying for one. |
@@ -96,7 +120,7 @@ returned people who were not children, so read what comes back.
 On the site's waiting list (`site/waiting.md`): Mary Ann Munday; John Tatnell, William Hampshire and Laurence
 Brennan junior; George Baylis senior, the father (known only from HO 18/87/59); Jack the sweep and George Munt
 (`obpt18190421-101-defend1132`); Elizabeth Bosley (`obpt18241202-153-defend945`, eight records, freed from
-Millbank 31 May 1830).
+Millbank 31 May 1830); Mrs. Foot, who Lydia Western said gave her the hospital's sheets (`t18200628-12`).
 
 Seen and not yet looked at: Robert Prendergast, twelve in 1827, eighteen records mostly hulks
 (`obpt18271025-210-defend1076`); John Lee, eleven in 1844, twenty records (`obpdef1-156-18441125`).

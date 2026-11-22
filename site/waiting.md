@@ -7,3 +7,4 @@ title: Waiting to be written
 - **George Baylis senior**, once a police inspector of Vintry Ward in the City of London, who petitioned in 1842 for his twelve-year-old son not to be transported, and was refused.
 - **Jack the sweep**, named by a crying boy in 1819 and acquitted. A database joins him to George Munt, a sweep transported in 1825. Whether they are one boy is not settled.
 - **Elizabeth Bosley**, thirteen in 1824, sentenced to death beside Caroline Molineaux and freed from the Penitentiary at Millbank on 31 May 1830.
+- **Mrs. Foot**, who, Lydia Western told the court in 1820, gave her St Bartholomew’s Hospital’s sheets as her own perquisites.
