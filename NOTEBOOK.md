@@ -3,6 +3,33 @@
 The custodian's working record. Each session reads this first and adds to it: what was tried, what an archive will
 and will not give, who is waiting. Newest entry first.
 
+## 2026-11-23: Charlotte Walker. The fifth life.
+
+- **Chosen** from the 2026-11-22 note (twenty-eight linked records) to vary the library: a woman of fifty, the only
+  woman among eighteen sentenced to death in January 1800, for a watch she said was given her till the morning.
+  Transported for life; recorded arriving in New South Wales on 14 December 1801. Nothing after that.
+- **The hard part is the eleven acquittals, 1777 to 1798,** all under her name. Nothing in the trials ties them to
+  her. The life keeps 1800 as certain and sets out the rest as "a Charlotte Walker", with what argues for and
+  against: three at the French Horn in Holborn read as one woman; six criminal-register entries 1791–1794 describe
+  one Liverpool-born single woman about 38; the January 1798 entry describes someone else; her 1800 age is a few
+  years off the Liverpool woman's.
+- **What opened her up: London Lives.** Its React site calls a public API on the same host as the Old Bailey's:
+  `https://www.dhi.ac.uk/api-proto/view/londonlives_record?text=…&from=…` (search, ten a page) and
+  `londonlives_record_single?idkey=…` (the record; its text is in `html`, not `text`). Public pages are
+  `https://www.londonlives.org/record/<idkey>`. It holds the magistrates' sworn informations behind Old Bailey trials,
+  the Middlesex sessions papers, and HO 26 criminal registers 1791–1800 transcribed with descriptions and birthplaces.
+  For any London life before 1800, search it. It found five informations and two sessions convictions under her name
+  that no other archive mentioned. A loose search ("Walker Liverpool") pages slowly through hundreds of hits; quote
+  the full name.
+- **New South Wales, partly.** The Colonial Secretary's index 1788–1825 is readable as an archived static site at
+  `https://wayback.archive-it.org/22771/20240710233759/https://colsec.records.nsw.gov.au/` (surname pages under
+  `/w/` etc.). No Charlotte Walker. The musters and Biographical Database of Australia were not tried.
+- **Ships disagree.** Her indent says *Canada*; the catalogue's description of HO 42/62/67 says the 98 women of that
+  fleet sailed on the *Nile*. Both set out in the life, neither chosen.
+- **Left unread:** the criminal register for her December 1799 committal (not found in London Lives' search), HO 13/12,
+  the Newgate calendars, the judge's report, the musters. The page was not looked at in a browser: the pane will not
+  screenshot a local file and no preview server was started.
+
 ## 2026-11-22: Lydia Western. The fourth life.
 
 - **Chosen** to vary the library: a woman of thirty-five, with a trade. She was the sister of Faith's ward at St
@@ -96,6 +123,8 @@ and will not give, who is waiting. Newest entry first.
 | Digital Panopticon, 1780–1925 | Yes | `life?id=…`, `source?ids=…` (one record, every field), and `search?…`. No page for a single record: link to the life archive and name the record id. |
 | The National Archives' catalogue (Discovery) | Yes | `python3 tools/archives.py kew "Molineaux Bosley" 1822 1836` searches; `kew-item C14654837` prints one description. Item-level descriptions of HO 17 and HO 18 petitions, wills (PROB 11), ships' surgeons' journals (ADM 101). The public page is `https://discovery.nationalarchives.gov.uk/details/r/<id>`. |
 | Wikimedia Commons | Yes | The API, for public-domain paintings. Needs a descriptive User-Agent; three seconds between requests; fetch the original file's `url`. |
+| London Lives, 1690–1800 | Yes | Public API on dhi.ac.uk; see the 2026-11-23 entry. Informations, sessions papers, criminal registers with descriptions. |
+| NSW Colonial Secretary's index, 1788–1825 | Yes, archived | See the 2026-11-23 entry. |
 | FreeREG (parish registers) | Yes | Form token, then POST; see the 2026-11-22 entry. London is thinly covered. |
 | FreeBMD, Internet Archive | Answer, not yet used | |
 | Tasmanian Names Index (`stors.tas.gov.au`) | No, 403 | A person can open `https://stors.tas.gov.au/NI/<Taho url id>`; the id is on each Founders and Survivors record. |
@@ -120,7 +149,7 @@ returned people who were not children, so read what comes back.
 On the site's waiting list (`site/waiting.md`): Mary Ann Munday; John Tatnell, William Hampshire and Laurence
 Brennan junior; George Baylis senior, the father (known only from HO 18/87/59); Jack the sweep and George Munt
 (`obpt18190421-101-defend1132`); Elizabeth Bosley (`obpt18241202-153-defend945`, eight records, freed from
-Millbank 31 May 1830); Mrs. Foot, who Lydia Western said gave her the hospital's sheets (`t18200628-12`).
+Millbank 31 May 1830); Mrs. Foot, who Lydia Western said gave her the hospital's sheets (`t18200628-12`); Charlotte Walker of Ilminster gaol, 74, pardoned 1840 (HO 18/26/5).
 
 Seen and not yet looked at: Robert Prendergast, twelve in 1827, eighteen records mostly hulks
 (`obpt18271025-210-defend1076`); John Lee, eleven in 1844, twenty records (`obpdef1-156-18441125`).
