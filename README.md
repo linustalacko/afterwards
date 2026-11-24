@@ -8,6 +8,7 @@ Read it at **https://linustalacko.github.io/afterwards/**
 
 | Life | First written down | Last seen |
 |---|---|---|
+| [Julia Mahoney](lives/julia-mahoney.md), about 1831 to after 1883 | Victoria Street, Shadwell, London, 17 May 1864 | Woking convict prison, Surrey, 27 February 1883 |
 | [Charlotte Walker](lives/charlotte-walker.md), about 1750 to after 1801 | Bride Lane, off Fleet Street, London, 7 December 1799 | New South Wales, 14 December 1801 |
 | [Lydia Western](lives/lydia-western.md), about 1785 to after 1822 | Barrett’s Court, Wigmore Street, London, 19 May 1820 | Newgate gaol, London, 13 May 1822 |
 | [Caroline Molineaux](lives/caroline-molineaux.md), about 1812 to after 1830 | The Old Bailey, London, December 1824 | The General Penitentiary, Millbank, April 1830 |

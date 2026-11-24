@@ -9,3 +9,4 @@ title: Waiting to be written
 - **Elizabeth Bosley**, thirteen in 1824, sentenced to death beside Caroline Molineaux and freed from the Penitentiary at Millbank on 31 May 1830.
 - **Mrs. Foot**, who, Lydia Western told the court in 1820, gave her St Bartholomew’s Hospital’s sheets as her own perquisites.
 - **Charlotte Walker of Ilminster gaol**, seventy-four, sentenced at Bridgwater to fourteen years’ transportation and pardoned in 1840 for her age after five years in gaol (HO 18/26/5). Not the Charlotte Walker of the library.
+- **Jane Smith**, twenty-four, who stabbed a Julia Mahoney outside the Royal Sovereign in Bluegate Fields in May 1853, saying she owed her a spite, and was transported for ten years (`t18530509-597`).

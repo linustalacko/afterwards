@@ -3,6 +3,29 @@
 The custodian's working record. Each session reads this first and adds to it: what was tried, what an archive will
 and will not give, who is waiting. Newest entry first.
 
+## 2026-11-24: Julia Mahoney. The sixth life.
+
+- **Chosen** to vary the library: an adult Irish woman, a laundress of Shadwell, never transported, in London's local
+  and convict prisons from 1864 to 1883. Found with a life-archive search for at least fifteen records, at least one
+  licence (`e0.pld.i.l=1`) and one death record (`e0.bmd.i.l=1`), and an age at trial of 45 or over. Eleanor
+  Errington of Copenhagen House (robbed 1777, `t17780429-42`) was looked at first and has one record only.
+- **What opened her up: the women's licence files (PCOM 4).** The Digital Panopticon transcribes one file in full as
+  sub-records of the licence (`source?ids=pldf…`): descriptions, weights in and out of each prison, previous
+  convictions, and every prison offence with its punishment. One file (PCOM 4/48/29) held both her sentences, so the
+  links between 1864, 1865, 1871 and 1876 rest on the prison's own list of previous convictions, not on the database.
+  The offence dates sit in a column labelled "taken off sick list"; the prison field is sometimes the prisoner's name.
+- **The Middlesex House of Detention calendars (`cpm…`) are transcribed in full** too, with alias, magistrate, judge
+  and previous convictions. They carried the alias Ann Brown both ways.
+- **Read the page images, every time.** The transcriptions had "Payment" for Pamment, "Germans" for Germane,
+  "Philhim" for Philbin, and the wrong judge for the 1853 trial (the heading of the next trial).
+- **FreeBMD now redirects programs to `/noc/gate`.** Treated as a refusal; the 1875 death row was not read. It was
+  rejected on dates anyway.
+- **A doubtful earlier record is set out in its own section** ("Before 1864"), with what argues for and against, and
+  nothing in the life rests on it: a Julia Mahoney stabbed on the forehead in Bluegate Fields in 1853, the same
+  surgeon in both trials, a forehead scar in both prison descriptions.
+- **Left unread:** the criminal registers to 1892 (Ancestry), the PCOM 2 and HO 24 registers (Find My Past), the
+  censuses, the GRO death index, the Thames Police Court's own registers, and what East End Finchley was.
+
 ## 2026-11-23: Charlotte Walker. The fifth life.
 
 - **Chosen** from the 2026-11-22 note (twenty-eight linked records) to vary the library: a woman of fifty, the only
@@ -126,7 +149,8 @@ and will not give, who is waiting. Newest entry first.
 | London Lives, 1690–1800 | Yes | Public API on dhi.ac.uk; see the 2026-11-23 entry. Informations, sessions papers, criminal registers with descriptions. |
 | NSW Colonial Secretary's index, 1788–1825 | Yes, archived | See the 2026-11-23 entry. |
 | FreeREG (parish registers) | Yes | Form token, then POST; see the 2026-11-22 entry. London is thinly covered. |
-| FreeBMD, Internet Archive | Answer, not yet used | |
+| FreeBMD | No, gate for programs (2026-11-24) | |
+| Internet Archive | Answers, not yet used | |
 | Tasmanian Names Index (`stors.tas.gov.au`) | No, 403 | A person can open `https://stors.tas.gov.au/NI/<Taho url id>`; the id is on each Founders and Survivors record. |
 | Trove (Australian newspapers) | No, bot check | Has an official API that needs a key. Ask Linus before applying for one. |
 | Papers Past (New Zealand) | No, bot check | |
@@ -149,7 +173,7 @@ returned people who were not children, so read what comes back.
 On the site's waiting list (`site/waiting.md`): Mary Ann Munday; John Tatnell, William Hampshire and Laurence
 Brennan junior; George Baylis senior, the father (known only from HO 18/87/59); Jack the sweep and George Munt
 (`obpt18190421-101-defend1132`); Elizabeth Bosley (`obpt18241202-153-defend945`, eight records, freed from
-Millbank 31 May 1830); Mrs. Foot, who Lydia Western said gave her the hospital's sheets (`t18200628-12`); Charlotte Walker of Ilminster gaol, 74, pardoned 1840 (HO 18/26/5).
+Millbank 31 May 1830); Mrs. Foot, who Lydia Western said gave her the hospital's sheets (`t18200628-12`); Charlotte Walker of Ilminster gaol, 74, pardoned 1840 (HO 18/26/5); Jane Smith, transported 1853 for stabbing a Julia Mahoney (`t18530509-597`).
 
 Seen and not yet looked at: Robert Prendergast, twelve in 1827, eighteen records mostly hulks
 (`obpt18271025-210-defend1076`); John Lee, eleven in 1844, twenty records (`obpdef1-156-18441125`).
