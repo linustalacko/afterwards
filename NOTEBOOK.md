@@ -3,6 +3,29 @@
 The custodian's working record. Each session reads this first and adds to it: what was tried, what an archive will
 and will not give, who is waiting. Newest entry first.
 
+## 2026-11-25: Susannah Prince. The seventh life.
+
+- **Chosen** to vary the library: not a defendant, and the first life before 1777. A poor woman of Westminster who
+  married James Prince, a Black servant born in Jamaica and "given as a Present" to a Major Cossley when an infant,
+  and told the parish of St Martin in the Fields about him twice (1730, 1737). Died in its workhouse, 3 January 1741.
+- **What opened her up: London Lives' datasets.** St Martin in the Fields settlement examinations (`smdsset_…`) are
+  transcribed in full and found by a quoted phrase, e.g. `"upon his oath saith that he was born"`. The St Martin's
+  workhouse registers (`smdswhr_…`) are found with `"<Surname> (pauper)"`: every admission and discharge, two
+  registers side by side (F4003 running, F4073 counting each person's admissions), age, overseer, outcome ("Dyed").
+  Columns are unlabelled. No page images for either. Years are as now counted; checked by the running register's
+  page order across January 1741.
+- **The catalogue gave the masters.** `kew "Cossley"` found Major Nat Cossley's 1718 letter endorsed "vintners"
+  (her "Vitners in Kent") and a Captain Cossley on the march to Elgin in 1725 (her "went to Scotland"). Set out as
+  probable, not joined.
+- **FreeREG** found an Anne Prince baptised in Covent Garden three months after Susannah's first examination, mother
+  Susanna, father George. Rejected on the father's name and set out.
+- **Weekdays are not given before 1752.** England kept the Julian calendar; Python's dates are Gregorian. Intervals
+  in days are safe, weekdays are not.
+- **Left unread:** the Fleet registers (RG 7, subscription indexes), St Martin's burial registers, the two Cossley
+  letters, the 1703 will of John Cossley of "Hinston" in Jamaica, and the original books at Westminster.
+- **Two more for the waiting list from the same examinations:** John Osburn, born at Guinea (1733), and George Romea,
+  born at Bengal (1777). Romea has three records only (one examination, two admissions); Osburn was not searched further.
+
 ## 2026-11-24: Julia Mahoney. The sixth life.
 
 - **Chosen** to vary the library: an adult Irish woman, a laundress of Shadwell, never transported, in London's local
@@ -148,7 +171,7 @@ and will not give, who is waiting. Newest entry first.
 | Wikimedia Commons | Yes | The API, for public-domain paintings. Needs a descriptive User-Agent; three seconds between requests; fetch the original file's `url`. |
 | London Lives, 1690–1800 | Yes | Public API on dhi.ac.uk; see the 2026-11-23 entry. Informations, sessions papers, criminal registers with descriptions. |
 | NSW Colonial Secretary's index, 1788–1825 | Yes, archived | See the 2026-11-23 entry. |
-| FreeREG (parish registers) | Yes | Form token, then POST; see the 2026-11-22 entry. London is thinly covered. |
+| FreeREG (parish registers) | Yes | Form token, then POST; see the 2026-11-22 entry. London is thinly covered. Each hit's `/search_records/…` page gives the parents. |
 | FreeBMD | No, gate for programs (2026-11-24) | |
 | Internet Archive | Answers, not yet used | |
 | Tasmanian Names Index (`stors.tas.gov.au`) | No, 403 | A person can open `https://stors.tas.gov.au/NI/<Taho url id>`; the id is on each Founders and Survivors record. |
@@ -173,7 +196,7 @@ returned people who were not children, so read what comes back.
 On the site's waiting list (`site/waiting.md`): Mary Ann Munday; John Tatnell, William Hampshire and Laurence
 Brennan junior; George Baylis senior, the father (known only from HO 18/87/59); Jack the sweep and George Munt
 (`obpt18190421-101-defend1132`); Elizabeth Bosley (`obpt18241202-153-defend945`, eight records, freed from
-Millbank 31 May 1830); Mrs. Foot, who Lydia Western said gave her the hospital's sheets (`t18200628-12`); Charlotte Walker of Ilminster gaol, 74, pardoned 1840 (HO 18/26/5); Jane Smith, transported 1853 for stabbing a Julia Mahoney (`t18530509-597`).
+Millbank 31 May 1830); Mrs. Foot, who Lydia Western said gave her the hospital's sheets (`t18200628-12`); Charlotte Walker of Ilminster gaol, 74, pardoned 1840 (HO 18/26/5); Jane Smith, transported 1853 for stabbing a Julia Mahoney (`t18530509-597`); John Osburn, born at Guinea (`smdsset_19_2015`); George Romea, born at Bengal (`smdsset_32_50698`).
 
 Seen and not yet looked at: Robert Prendergast, twelve in 1827, eighteen records mostly hulks
 (`obpt18271025-210-defend1076`); John Lee, eleven in 1844, twenty records (`obpdef1-156-18441125`).

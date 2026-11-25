@@ -10,3 +10,5 @@ title: Waiting to be written
 - **Mrs. Foot**, who, Lydia Western told the court in 1820, gave her St Bartholomew’s Hospital’s sheets as her own perquisites.
 - **Charlotte Walker of Ilminster gaol**, seventy-four, sentenced at Bridgwater to fourteen years’ transportation and pardoned in 1840 for her age after five years in gaol (HO 18/26/5). Not the Charlotte Walker of the library.
 - **Jane Smith**, twenty-four, who stabbed a Julia Mahoney outside the Royal Sovereign in Bluegate Fields in May 1853, saying she owed her a spite, and was transported for ten years (`t18530509-597`).
+- **John Osburn**, about sixty in 1733, who told the parish of St Martin in the Fields that he was born at Guinea in Africa and came to England about the end of Queen Anne’s wars, and was lodging with a trumpeter of the Horse Guards at Marylebone (`smdsset_19_2015`).
+- **George Romea**, about twenty in 1777, born at Bengal, who had been footman six years to a surgeon in Coventry Street for clothes, diet and lodging and no wages, and was then in St Martin’s workhouse (`smdsset_32_50698`).
