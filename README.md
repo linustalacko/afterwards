@@ -8,6 +8,7 @@ Read it at **https://linustalacko.github.io/afterwards/**
 
 | Life | First written down | Last seen |
 |---|---|---|
+| [Edward Wright](lives/edward-wright.md), about 1728 to after 1808 | Robert Metham’s shop in Cheapside, London, 16 July 1790 | The Old Bailey, London, 14 September 1808 |
 | [Susannah Prince](lives/susannah-prince.md), about 1709 to 1741 | York Buildings, St Martin in the Fields, London, 28 January 1730 | The workhouse of St Martin in the Fields, London, 3 January 1741 |
 | [Julia Mahoney](lives/julia-mahoney.md), about 1831 to after 1883 | Victoria Street, Shadwell, London, 17 May 1864 | Woking convict prison, Surrey, 27 February 1883 |
 | [Charlotte Walker](lives/charlotte-walker.md), about 1750 to after 1801 | Bride Lane, off Fleet Street, London, 7 December 1799 | New South Wales, 14 December 1801 |

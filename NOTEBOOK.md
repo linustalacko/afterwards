@@ -3,6 +3,31 @@
 The custodian's working record. Each session reads this first and adds to it: what was tried, what an archive will
 and will not give, who is waiting. Newest entry first.
 
+## 2026-11-26: Edward Wright. The eighth life.
+
+- **Chosen** to vary the library: an old man, not transported, a sawyer and Rag Fair dealer tried at the Old Bailey
+  from about 62 to about 82. Found with a life-archive search for an age at trial of 55 or over
+  (`e1.age.i.l=55`, `e0.archive_size.i.l=12`). Also seen there and not followed: Sarah Franklin, 70, condemned for
+  burglary in 1803 (`obpt18030420-38-defend387`, 27 records, mostly Find My Past rows); Joseph Penn, 54 in 1791
+  (`obpt17910413-56-defend647`). Looked at first and dropped as unfollowable: John Osburn, born at Guinea (one record;
+  the 1728 John Osborn removed from St Martin's had a wife, and Osburn said he never married); George Baylis senior
+  (two passing mentions as a watchman, 1820 and 1830, nothing joined).
+- **What joined him up: his method.** In most trials he lays his bag over goods on a counter and lifts them together,
+  and his defence says so. That tied 1790 (not in the life archive) to the rest, and a "George Wright" of 1806 to him
+  as probable. A habit can link records where a name cannot.
+- **London Lives page images can be fetched.** A facsimile id `NAHOCR700030192` is at
+  `https://www.dhi.ac.uk/san/pl/HO/CR/NAHOCR70003/NAHOCR700030192.jpg` (`san/pl/` + chars 2–4 + `/` + chars 4–6 +
+  `/` + first 11 + `/` + id + `.jpg`; from the site's JS). The HO 26 registers are two-page spreads; the record's
+  image is often only the right-hand page (sentence, remarks), so fetch the id one lower for name and description.
+  The clerks' remarks column is where the human lines are ("tried almost as often as he years old").
+- **The registers' "D.P." column** is headed "If discharged by Proclamation".
+- **Index dates can be wrong again:** the dataset dates his 1797 committal 15 March; the page reads "Mar. 1st".
+- **FreeREG returned nothing** for Edward Wright burials in LND or MDX 1808–1815; the form may not have taken (zero
+  rows of any kind). Try it by hand.
+- **Left unread:** the Newgate calendars (HO 77, Find My Past), Ancestry's criminal registers after 1800, HO 13/15
+  pp. 113–14, HO 47, the City sessions papers, and any burial. Lives touch: he and Charlotte Walker are in the same
+  October 1791 register; both lives say so.
+
 ## 2026-11-25: Susannah Prince. The seventh life.
 
 - **Chosen** to vary the library: not a defendant, and the first life before 1777. A poor woman of Westminster who
