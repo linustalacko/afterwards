@@ -3,6 +3,30 @@
 The custodian's working record. Each session reads this first and adds to it: what was tried, what an archive will
 and will not give, who is waiting. Newest entry first.
 
+## 2026-11-27: Thomas Dutton. The ninth life.
+
+- **Chosen** to vary the library: a labourer in his fifties, married, never transported, convicted twice of passing
+  bad sixpences in the West End (1857, 1858) and released on licence from Woking at the end of 1861. Found with a
+  life-archive search for a male licence (`e0.pld.i.l=1`), at least fifteen records and an age at trial of 50 or
+  over; it returned only two people (he and George Hawkins, 1861, not looked at). Elizabeth Bosley and Jane Smith
+  were looked at first: Bosley's eight records are bare index rows already used in Caroline Molineaux's life, and
+  Jane Smith's name is too common to follow.
+- **What opened him up: the men's licences (PCOM 3) are transcribed too,** as `tlm…` sub-records: committal court
+  and date, next of kin with address, married or single, number of children, whether he could read, health,
+  description, marks, previous convictions, and each prison with conduct, trade and schooling. Fetch the parent
+  `tlmTNA/CCC/2B/PCOM3/…` record; it carries every sub-record in one page. Less than the women's PCOM 4 files: no
+  prison offences or weights.
+- **The Proceedings date the session, not the day.** Licence and catalogue give 25 October (the session's first day);
+  the page images put the court-day heading, "NEW COURT.—Tuesday, October 26th," two cases earlier. Walk back
+  through the page images to the nearest heading.
+- **The transcription read "pasting counterfeit coin"; the page reads "passing."** Read the page again.
+- **The Digital Panopticon joined a 25-year-old larcenist of 1861** to a man of 52. Rejected on age and offence.
+- **dhi.ac.uk and the Digital Panopticon timed out for minutes at a time** this session; requests that hung once
+  went through later. Run fetches in the background and retry.
+- **Left unread:** the licence pages themselves, the HO 8 quarterly returns, PCOM 2, the Newgate calendars (all Find
+  My Past), the criminal registers (Ancestry), the 1861 census at 7 Bridgewater Square (Mary Vernon, his next of
+  kin), and the FreeBMD death of 1887. Caroline Murphy, tried with him, goes on the waiting list.
+
 ## 2026-11-26: Edward Wright. The eighth life.
 
 - **Chosen** to vary the library: an old man, not transported, a sawyer and Rag Fair dealer tried at the Old Bailey
@@ -221,7 +245,7 @@ returned people who were not children, so read what comes back.
 On the site's waiting list (`site/waiting.md`): Mary Ann Munday; John Tatnell, William Hampshire and Laurence
 Brennan junior; George Baylis senior, the father (known only from HO 18/87/59); Jack the sweep and George Munt
 (`obpt18190421-101-defend1132`); Elizabeth Bosley (`obpt18241202-153-defend945`, eight records, freed from
-Millbank 31 May 1830); Mrs. Foot, who Lydia Western said gave her the hospital's sheets (`t18200628-12`); Charlotte Walker of Ilminster gaol, 74, pardoned 1840 (HO 18/26/5); Jane Smith, transported 1853 for stabbing a Julia Mahoney (`t18530509-597`); John Osburn, born at Guinea (`smdsset_19_2015`); George Romea, born at Bengal (`smdsset_32_50698`).
+Millbank 31 May 1830); Mrs. Foot, who Lydia Western said gave her the hospital's sheets (`t18200628-12`); Charlotte Walker of Ilminster gaol, 74, pardoned 1840 (HO 18/26/5); Jane Smith, transported 1853 for stabbing a Julia Mahoney (`t18530509-597`); John Osburn, born at Guinea (`smdsset_19_2015`); George Romea, born at Bengal (`smdsset_32_50698`). Caroline Murphy, tried with Thomas Dutton (`t18581025-957`).
 
 Seen and not yet looked at: Robert Prendergast, twelve in 1827, eighteen records mostly hulks
 (`obpt18271025-210-defend1076`); John Lee, eleven in 1844, twenty records (`obpdef1-156-18441125`).
