@@ -16,7 +16,7 @@ frontispiece_focus: 50% 35%
 frontispiece_caption: Antonello da Messina, Portrait of a Man, about 1475–76, National Gallery, London. Who sat for it is not known for certain. No likeness of Thomas Dutton exists; this is not him.
 ---
 
-Thomas Dutton first appears on Tuesday 24 November 1857, in the New Court at the Old Bailey, before the Common Serjeant and the seventh jury. The case before his was William Wilkinson’s, for unlawfully uttering counterfeit coin, and Thomas Dutton, aged fifty-two, was indicted “for a like offence.” He pleaded guilty and was confined six months.[^1857] That is the whole of the report. A later certificate of the conviction, read out in court, says he pleaded guilty “to passing counterfeit coin,” and his licence of 1861 says the six months were served in a house of correction, without saying which.[^1858a][^licence]
+Thomas Dutton first appears on Tuesday 24 November 1857, in the New Court at the Old Bailey, before the Common Serjeant and the seventh jury. The case before his was William Wilkinson’s, for unlawfully uttering counterfeit coin, and Thomas Dutton, aged fifty-two, was indicted “for a like offence.” He pleaded guilty and was confined six months.[^1857] That is the whole of the report. A later certificate of the conviction, read out in court, says he pleaded guilty “to passing counterfeit coin,”[^1858a] and his licence of 1861 says the six months were served in a house of correction, without saying which.[^licence]
 
 ![His first trial, as the Proceedings printed it: the day’s heading, then William Wilkinson’s case and his. Image: Harvard University Library, through Old Bailey Online, used non-commercially.](record-dutton-1857.jpg)
 
